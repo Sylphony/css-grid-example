@@ -13,15 +13,32 @@
   // e.g. 3 values = 3 rows with values
   grid-template-rows: 1fr 5fr 2fr;
 
-  // grid-template-widths:
+  // grid-template-columns:
   // Sets how wide each column is, in order.
   // e.g. 3 values = 3 columns with values
   grid-template-columns: 1fr 3fr 1fr;
-  
+
+  // row-gap:
+  // Sets the amount of gap/gutter space between each row
+  row-gap: 0.5rem;
+
+  // column-gap:
+  // Sets the amount of gap/gutter space between each column
+  column-gap: 2rem;
+
+  // gap:
+  // Shortcut for <row-gap> <column-gap>
+  // gap: 0.5rem 2rem;
+
+  @media (min-width: 1280px) {
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    row-gap: 2rem;
+    column-gap: 0.5rem;
+  }
+
   &__column {
     padding: 0.5rem;
-    margin: 0.5rem;
-
     color: #FFF;
     background-color: #F9F;
 
