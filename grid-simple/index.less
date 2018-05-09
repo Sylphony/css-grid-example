@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+
+  // Explict grid
+  // Set relative values using "fr" units
+
+  // grid-template-rows: 
+  // Sets how high each row should be, in order.
+  // e.g. 3 values = 3 rows with values
+  grid-template-rows: 1fr 5fr 2fr;
+
+  // grid-template-widths:
+  // Sets how wide each column is, in order.
+  // e.g. 3 values = 3 columns with values
+  grid-template-columns: 1fr 3fr 1fr;
+  
+  &__column {
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    color: #FFF;
+    background-color: #F9F;
+
+    &:nth-child(odd) {
+      background-color: #0AF;
+    }
+  }
+}
